@@ -12,8 +12,8 @@ Clone this repository - $git clone https://github.com/sysadmin-imran/JenkinsWar-
 
 cd JenkinsWar-webapps # from your root directory
 
-$docker build -t tomcatwebapp .
+docker build -t tomcatwebapp:latest .
 
-$docker run -p 8082:8080 tomcatwebapp
+docker run -d --name tomcatwebapp -p 8082:8080 tomcatwebapp:latest
 
 http://localhost:8082
